@@ -1,0 +1,234 @@
+html {word-break: keep-all; margin: 0px; padding: 0px;}
+body {margin: 0px; padding: 0px;}
+
+@font-face {
+  font-family: 'YESMyoungjo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (max-width: 900px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+
+/*랩*/
+.wrap {
+  width: 100vw; padding-top:0px;
+}
+.wrapgrey {background-color: #555; padding-top: 0px;padding-bottom: 30px;height:auto;}
+
+.wrapwhite {background-color: white;padding-top: 0px;padding-bottom: 0px;height:auto;}
+
+.wrapblack {background-color: black;padding-top: 0px;padding-bottom: 0px;height:auto; }
+
+.wrapnav {background-color: rgba(34, 34, 34, 0.9) }
+
+.ending-credits-bg {
+  background: #333;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ending-credits-scroll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* 스크롤 애니메이션*/
+  animation: credits-scroll 9s linear;
+}
+
+@keyframes credits-scroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+
+.ending-credits-inner {
+  width: 900px;
+  margin: 0 auto;
+  color: #e0ffff;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+  background: none;
+}
+
+.ending-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.ending-credits-table {
+  margin-bottom: 60px;
+}
+
+.ending-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.ending-role {
+  width: 120px;
+  color: #e0ffff;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.ending-name {
+  color: #00ff00;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 16px;
+  letter-spacing: 0.01em;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.ending-footer {
+  background: #eee;
+  border-top-left-radius: 90vw 80px;
+  border-top-right-radius: 90vw 80px;
+  padding: 38px 32px 24px 32px;
+  color: #222;
+  text-align: left;
+  font-size: 1.05rem;
+  margin-top: 60px;
+}
+
+.ending-footer-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ending-footer-desc {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.7;
+}
+/* 엔딩 전체 배경 및 컨테이너 */
+.ending-wrap {
+  background: #353535;
+  min-height: 70vh;
+  padding: 0;
+}
+
+.ending-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 32px 40px 32px;
+}
+
+.ending-main {
+  color: #e0ffff;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.ending-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 36px;
+  letter-spacing: 0.1em;
+}
+
+.ending-table {
+  margin-bottom: 40px;
+}
+
+.ending-row {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.ending-role {
+  width: 120px;
+  color: #e0ffff;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.ending-name {
+  color: #41e2e2;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 16px;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+
+.ending-footer-curve {
+  background: #e5e5e5;
+  border-top-left-radius: 100vw 80px;
+  border-top-right-radius: 100vw 80px;
+  margin-top: -40px;
+  padding-top: 60px;
+  padding-bottom: 48px;
+  width: 100vw;
+  min-height: 170px;
+  box-sizing: border-box;
+}
+
+.ending-footer-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #222;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.ending-footer-title {
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.ending-footer-desc {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.7;
+}
+
+.ending-main {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(.23,1.13,.54,.91);
+}
+.ending-main.visible {
+  opacity: 1;
+  transform: none;
+}
+
+

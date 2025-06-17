@@ -1,0 +1,519 @@
+html {word-break: keep-all; margin: 0px;}
+
+.wrap {
+  width: 100vw; padding-top:0px;
+}
+.wrapgrey {background-color: #555; padding-top: 0px;padding-bottom: 30px;height:auto;}
+
+.wrapfixed1 {position: relative;
+  background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTBia25qM2U0cmxnY2ExY2FpYm00cHJrcW5jNWk3aDZjaGFjNDJwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JdFEeta1hLNnO/giphy.gif'); 
+  background-attachment: fixed;   
+  background-size: 600px;
+  background-position: center;
+  height: 600px;
+  min-height: 100vh; 
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(81, 255, 42, 0.5); 
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.wrapbottom-bg {
+  background: url('') no-repeat center center;
+  background-size: cover;
+  min-height: 1150px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapwhite {background-color: white;padding-top: 0px;padding-bottom: 0px;height:auto;}
+
+.wrapblack {background-color: black;padding-top: 0px;padding-bottom: 0px;height:auto; }
+
+.wrapnav {background-color: rgba(34, 34, 34, 0.9) }
+
+.wrap,
+.wrapnav {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapbg {background-color: #00ff00; width:100vw; height: 800px;}
+
+h2{font-family:'YESMyoungjo-Regular'; color: white;
+
+margin: 0px; padding-top: 60px; padding-bottom: 60px;
+font-size: 2rem;
+}
+
+body {margin: 0px;
+overflow-x: hidden;
+}
+
+.highway-visual {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1a1a1a 0%, #333 100%);
+  white-space: nowrap;
+}
+
+.highway-img {
+  display: inline-block
+  width: 100%;
+  height: 200px
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+#children-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.running-child {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background-image: url('./img/running-child.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: runAcross 8s linear infinite;
+}
+
+@keyframes runAcross {
+  0% { left: -50px; }
+  100% { left: calc(100% + 50px); }
+}
+
+.highway-img {
+  width: 120px;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+  filter: grayscale(0.1) contrast(1.15);
+  margin-top: 0;
+}
+#children-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 100vh;
+  pointer-events: none;
+}
+
+/*나브-> 색반전해야함*/ 
+
+.wrapnav {background-color: rgba(34, 34, 34, 0.9) }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+ width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(30, 30, 60, 0.4); 
+  border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+  z-index: 10000;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  color: #00ff00;
+  font-family: 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+   box-sizing: border-box;
+  width: 100%;
+}
+}
+
+.nav-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.nav-menu a:not(.highlight):hover {
+  background: #333;
+  color: #00ff00;
+}
+
+.nav-menu a.highlight {
+  color: #fff;
+  background: #2b90ff;
+}
+
+.nav-menu a.highlight:hover {
+  background:#00ff00;
+  color: blue;
+}
+
+
+@font-face {
+  font-family: 'YESMyoungjo-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  padding: 4rem 2rem;
+}
+
+.container h2 {
+  position: relative;
+  margin: 2rem 0;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.container h2:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background: url('./img/child-small.gif') no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.container h2:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.scared-children {
+  position: fixed;
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  background: url('./img/scared-child.gif') no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.2s ease;
+}
+
+.container h2:hover ~ .scared-children {
+  opacity: 0.8;
+}
+
+/*랩*/
+.wrap {width: 100%; padding-top:0px;
+}
+.wrapgrey {background-color: #555; padding-top: 0px;padding-bottom: 30px;height:auto;}
+
+.wrapwhite {background-color: white;padding-top: 0px;padding-bottom: 0px;height:auto;}
+
+.wrapblack {background-color: black;padding-top: 0px;padding-bottom: 0px;height:auto; }
+
+.wrapnav {background-color: rgba(34, 34, 34, 0.9) }
+
+/*오감도용 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+/* 폰트 */
+.creepy-font-1 { font-family: 'Creepster', cursive; }
+.creepy-font-2 { font-family: 'Nosifer', cursive; }
+.creepy-font-3 { font-family: 'UnifrakturCook', cursive; font-weight: 700; }
+.creepy-font-4 { font-family: 'Courier New', monospace; font-style: italic; letter-spacing: 0.15em; color: #8B0000; }
+.creepy-font-5 { font-family: 'Arial Black', Gadget, sans-serif; color: #4B0082; text-shadow: 1px 1px 2px black; }
+
+
+
+.number-item {
+  position: absolute;
+}
+
+.children-gif {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+		/* 오감도 맵 영역 */
+.ogamdo-map {
+  position: relative;
+  width: 100vw;
+  height: 95vh;
+  min-height: 700px; /* 더 크게 */
+  background: #fff;
+  margin: 2rem auto;
+  z-index: 50;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+/* 오감도 포인트 */
+.ogamdo-point {
+  position: absolute;
+  font-size: 3rem; /* 더 크게 */
+  font-family: 'Noto Serif KR', 'YESMyoungjo-Regular', serif;
+  color: #222;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 60;
+  min-width: 80px; /* 겹침 방지 */
+  min-height: 80px;
+  padding: 0.5rem;
+  word-break: keep-all;
+  white-space: nowrap;
+  background: transparent !important;
+  box-shadow: none !important;
+  min-width: auto !important;
+  min-height: auto !important;
+  padding: 0 !important;
+  border-radius: 50%;
+}
+
+.ogamdo-gif {
+  width: 60px; 
+  height: auto;
+  display: block;
+  margin: 10px auto 0;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
+/* 회전 클래스 */
+.rotate-90 { transform: translate(-50%, -50%) rotate(90deg); }
+.rotate-180 { transform: translate(-50%, -50%) rotate(180deg); }
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .ogamdo-point {
+    font-size: 2.5rem;
+    min-width: 70px;
+    min-height: 70px;
+  }
+  .ogamdo-gif { width: 50px; }
+}
+
+@media (max-width: 768px) {
+  .ahae-img, .running-child {
+    width: 40px;
+    max-width: 60px;
+  }
+}
+  
+  .ogamdo-point {
+  font-size: 2rem !important;
+  white-space: nowrap;
+  word-break: normal;
+  line-height: 1.2;
+  color: #222;
+  z-index: 60;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+  }
+
+.ahae-gif { 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: 10px 0;
+  font-size: 2.5rem;
+  font-family: 'YESMyoungjo-Regular';
+  color: #222;
+  background: #fff;
+  padding: 10px 15px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 10;
+  will-change: transform, opacity;
+}
+
+.ahae-gif.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wrapwhite {
+  max-width: 100vw !important;
+  overflow-x: auto !important;
+  padding: 2rem 1rem !important;
+}
+
+.ogamdo-map {
+  min-height: 800px !important;
+  width: 100% !important;
+  overflow: visible !important;
+}
+
+.ahae-img, .running-child {
+  width: 90px; 
+  height: auto;
+  max-width: 120px; 
+  filter: none;
+  min-width: 60px; 
+  margin-left:8px;
+  mix-blend-mode: normal; 
+}
+
+.running-child {
+  animation-duration: 4s !important;
+}
+
+.creepy-font-1, .creepy-font-2, .creepy-font-3, 
+.creepy-font-4, .creepy-font-5 {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ahae-img {
+  transform: perspective(1000px) rotateX(15deg);
+  transition: transform 0.6s;
+}
+
+.ahae-gif.show .ahae-img {
+  transform: perspective(1000px) rotateX(0);
+}
+
+.container h2 {
+    position: relative;
+    z-index: 50;
+  }
+
+  /* CSS 수정 */
+.creepy-font-1 { 
+  font-family: 'Creepster', cursive !important; 
+  color: #ff0000 !important;
+}
+.creepy-font-2 { 
+  font-family: 'Nosifer', cursive !important;
+  text-shadow: 0 0 10px #8b0000 !important;
+}
+
+/*오감도 메인*/
+.ogamdo-area {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDlrbmV0aWRlb2hwb2cwbzN5Yml0eTMzdGc5MWJqNTlqaXBwMDF3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0Exm8xQJVmo1WtSU/giphy.gif'); 
+}
+
+.moving-word {
+  position: absolute;
+  font-size: 5vw;
+  color: #fff;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 20px #fff,
+    0 0 40px #aaa,
+    0 0 80px #fff;
+  filter: blur(0.5px) brightness(1.1);
+  opacity: 0.92;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  user-select: none;
+}
+
+.moving-word:hover {
+  color: #39ff14;
+  text-shadow:
+    0 0 16px #39ff14,
+    0 0 40px #39ff14,
+    0 0 80px #fff;
+  transform: scale(1.15) rotate(-3deg);
+  z-index: 10;
+}
+
+/*다음*/
+
+.angled-text {
+  transform-origin: top left;
+  transition: transform 0.3s cubic-bezier(.77,0,.18,1.01);
+  will-change: transform;
+  /* 초기 기울기(예시) */
+  transform: perspective(600px) rotateX(8deg) skew(10deg);
+}
+
+.glass-neon-cursor {
+      position: fixed;
+      top: 0; left: 0;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      /* 유리 질감 (글래스모피즘) */
+      background: rgba(255, 255, 255, 0.18);
+      box-shadow:
+        0 0 18px 6px #00ff00, 
+        0 0 36px 16px #00ff8c80,
+        0 2px 8px 0 rgba(0,0,0,0.15);
+      backdrop-filter: blur(8px) saturate(180%);
+      border: 1.5px solid rgba(255,255,255,0.35);
+      transition: background 0.15s, box-shadow 0.15s, border 0.15s;
+      mix-blend-mode: lighten;
+    }
+
+    .glass-neon-cursor.active {
+      background: rgba(0,255,247,0.22);
+      box-shadow:
+        0 0 28px 12px #00fff7,
+        0 0 56px 24px #00eaff80,
+        0 2px 16px 0 rgba(0,0,0,0.18);
+      border: 2.5px solid #00fff7;
+    }
+    .nav-title {
+  font-size: 26px;
+  font-weight: bold;
+}

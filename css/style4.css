@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3</title>
+  <link rel="stylesheet" href="./css/style3.css">
+</head>
+<body>
+    <div class="wrap wrapnav">
+<nav class="nav">
+  <span class="nav-title nav-anim">골편에 관한 무제</span>
+  <ul class="nav-menu">
+    <li><a class="nav-anim" href="index.html">처음으로</a></li>
+    <li><a class="nav-anim" href="index.html">생애</a></li>
+    <li><a class="nav-anim" href="index2.html">오감도</a></li>
+    <li><a class="nav-anim" href="index3.html">골편</a></li>
+    <li><a class="nav-anim highlight" href="#mirror" id="mirror-btn">거울에 비추기</a></li>
+  </ul>
+</nav>
+<div class="wrap wrapblack">
+    <div class="container">
+        <div class="square">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="wrap wrapblack">
+    <div class="container">
+        <div class="cube-container">
+            <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+            </div>
+               <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+            </div>
+               <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+            </div>
+                  <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+                 <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+                      <div class="cube">
+                <div class="face front">ㅇ</div>
+                <div class="face back">ㄱ</div>
+                <div class="face right">ㄷ</div>
+                <div class="face left">▽</div>
+                <div class="face top">ㅇ</div>
+                <div class="face bottom">ㅅ</div>
+            </div>
+</div>
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="wrap wrapblack">
+    <div class="fixed-bg"></div>
+    <div class="imgback">
+        <img src="./img/ hos.png"
+        style="width:100%;height:600px ;object-fit:cover;">
+    </div>
+</div>
+ 
+
+
+  <div class="intro-section">
+    <div class="intro-inner">
+      <div class="intro-text">
+        <p class="intro-title">이 앞은 수술실입니다.<br>골편 보관 수칙을 준수하길 바랍니다.</p>
+        <a href="#game-image" class="intro-btn">→ 수술실로 들어가기</a>
+      </div>
+      <div class="rules-box">
+        <div class="rules-title">골편 보관 수칙</div>
+        <ol class="rules-list">
+          <li>
+            수술실에 들어가기 전 흰 과일을 한 개 전부 섭취하세요.<br>
+            <span class="rules-desc">(너무 크지 않은 과일을 권장합니다. 병원 내에는 껍질을 완전히 제거한 사과가 항상 비치되어 있습니다.)</span>
+          </li>
+          <li>수술실 안에서는 절대로 거울을 들여다보지 마세요.</li>
+          <li>수술 중, 뼈가 하얗지 않으면 즉시 수술을 중단하세요.</li>
+          <li>수술실에서 이빨이나 손톱을 발견하면 만지지 말고 담당자에게 보고하세요.</li>
+          <li>수술이 끝난 뒤 햇빛에 골편을 비추어 투명해보인다면 즉시 병원을 떠나세요.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/sur_room.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">왼쪽 벽에 거울이 보인다..</div>
+    <div class="script" id="script-1">수술실 침대가 있다..<br>주변을 둘러볼까?</div>
+    <div class="script" id="script-2">거슬리는 소리가 들리는 것 같다..<br>좀 더 집중해볼까?</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="이미지경로.jpg">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">거울에 뭔가 비친다.. 손을 뻗어보자.</div>
+    <div class="script" id="script-1">내 팔이 면도칼을 든 채로 끊어져 떨어졌다.<br>자세히 보면 무엇에 몹시 위협당하는 것처럼 새파랗다.<br>이렇게 하여 잃어버린 내 두개팔을 나는<br>촉대세움으로 내 방안에 장식하여 놓았다. </div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/cabinet.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">스크립트 1</div>
+    <div class="script" id="script-1">스크립트 2</div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/sound.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">문 앞이 막혀 있다..<br>가까이 다가가볼까?</div>
+    <div class="script" id="script-1">오..다시 문을 닫자.</div>
+    <div class="script" id="script-2">강행돌파하자.</div>
+  </div>
+</div>
+
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">거울때문에나는거울속의나를만져보지를못하는구료마는<br>거울아니었던들내가어찌거울속의나를만나보기만이라도했겠오<br>나는지금거울을안가졌오마는거울속에는늘거울속의내가있오</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">스크립트 1</div>
+    <div class="script" id="script-1">스크립트 2</div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">스크립트 1</div>
+    <div class="script" id="script-1">스크립트 2</div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">스크립트 1</div>
+    <div class="script" id="script-1">스크립트 2</div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<div class="game-wrapper">
+  <div class="game-area">
+
+    <img id="game-image" src="./img/.png">
+    <div class="choices">
+      <div class="choice" onclick="selectChoice(0)"> <img src="choice1.jpg"></div>
+      <div class="choice" onclick="selectChoice(1)"> <img src="choice2.jpg"></div>
+      <div class="choice" onclick="selectChoice(2)"> <img src="choice3.jpg"></div>
+    </div>
+  </div>
+ <div class="scripts">
+    <div class="script" id="script-0">스크립트 1</div>
+    <div class="script" id="script-1">스크립트 2</div>
+    <div class="script" id="script-2">스크립트 3</div>
+  </div>
+</div>
+
+<script>
+const scripts = [
+  "첫 번째 스크립트입니다.",
+  "두 번째 스크립트입니다.",
+  "세 번째 스크립트입니다."
+];
+let scriptIndex = 0;
+
+function nextScript() {
+  if (scriptIndex < scripts.length - 1) {
+    scriptIndex++;
+    document.getElementById('game-script').innerText = scripts[scriptIndex];
+  } else {
+    // 다음 장면
+    alert("게임이 끝났습니다!");
+  }
+}
+
+function selectChoice(choiceIdx) {
+  // 선택지 클릭 
+  alert(`선택지 ${choiceIdx + 1}을(를) 선택했습니다.`);
+  // 다음 스크립트 혹은 다음 장면으로 이동하는 로직
+}
+function showScript(idx) {
+  // 모든 스크립트 숨김
+  document.querySelectorAll('.script').forEach(el => el.classList.remove('active'));
+  // 선택한 인덱스만 표시
+  document.getElementById('script-' + idx).classList.add('active');
+}
+
+const sentences = document.querySelectorAll('.poetry-sentence');
+let currentActive = 0;
+
+// 예시: 4방향, 0~360deg를 4등분해서 활성화
+function updateSentences(rotationY) {
+  const n = sentences.length;
+  const anglePer = 360 / n;
+  const activeIdx = Math.floor(((rotationY % 360) + 360) % 360 / anglePer);
+  sentences.forEach((el, i) => {
+    el.classList.toggle('active', i === activeIdx);
+  });
+}
+
+// 큐브 & 애니메이션 상태 관리
+let cubes = [];
+let isPlaying = false;
+let currentNotes = [];
+let animationFrameId = null;
+
+// 오디오 컨텍스트 초기화
+const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+// 자음→음계 매핑 (확장 버전)
+const consonantToNote = {
+  'ㄱ': 'C4', 'ㄴ': 'D4', 'ㄷ': 'E4', 'ㄹ': 'F4', 'ㅁ': 'G4', 
+  'ㅂ': 'A4', 'ㅅ': 'B4', 'ㅇ': 'C5', 'ㅈ': 'D5', '▽': 'E5', 
+  '△': 'F5', 'X': 'G5', '○': 'A5'
+};
+const noteFreq = { /* 위와 동일 */ };
+
+// 큐브 초기화
+document.querySelectorAll('.cube').forEach(cube => {
+  cubes.push({
+    element: cube,
+    rotationY: 0,
+    baseSpeed: Math.random() * 0.02 + 0.01 // 각 큐브별 기본 속도
+  });
+});
+
+// 음표 재생 (Web Audio API + 큐브 색상 변화)
+function playNote(note, index) {
+  const osc = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+  osc.connect(gain);
+  gain.connect(audioContext.destination);
+  
+  // 음색 설정
+  osc.type = ['sine', 'square', 'sawtooth'][index % 3];
+  osc.frequency.setValueAtTime(noteFreq[note], audioContext.currentTime);
+  
+  // 게인 엔벨로프
+  gain.gain.setValueAtTime(0.1, audioContext.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+  
+  // 큐브 색상 변화
+  const cube = cubes[index % cubes.length];
+  cube.element.style.filter = `hue-rotate(${index * 60}deg)`;
+  
+  osc.start();
+  osc.stop(audioContext.currentTime + 0.5);
+}
+
+// 애니메이션 루프
+function animate() {
+  cubes.forEach((cube, index) => {
+    cube.rotationY += currentNotes[index] ? 0.05 : cube.baseSpeed;
+    cube.element.style.transform = 
+      `rotateY(${cube.rotationY}deg) 
+       rotateX(${cube.rotationY * 0.7}deg)
+       scale(${currentNotes[index] ? 1.2 : 1})`;
+  });
+  animationFrameId = requestAnimationFrame(animate);
+}
+
+// 시 문장 클릭 핸들러
+document.querySelectorAll('.poetry-sentence').forEach((el, sentenceIndex) => {
+  el.addEventListener('click', () => {
+    // 기존 재생 중지
+    if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    audioContext.resume(); // iOS 오디오 활성화
+    
+    // 자음 추출 & 음표 변환
+    const text = el.textContent;
+    const consonants = [...text].map(ch => {
+      const code = ch.charCodeAt(0) - 0xAC00;
+      return code >= 0 && code <= 11171 ? 
+        ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'][Math.floor(code / 588)] : ch;
+    });
+    
+    // 음표 시퀀스 생성
+    currentNotes = consonants.map(c => consonantToNote[c] || null);
+    
+    // 음표 재생 및 애니메이션 시작
+    currentNotes.forEach((note, i) => {
+      if (note) {
+        const delay = i * 600; // 템포 조정 (600ms/beat)
+        setTimeout(() => playNote(note, i), delay);
+      }
+    });
+    
+    // 애니메이션 재시작
+    animate();
+  });
+});
+
+// 초기 애니메이션 시작
+animate();
+</script>
+</body>
+</html>
+
+
+
+
+
